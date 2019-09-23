@@ -25,6 +25,10 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Places", name: "places", widget: "map", required: false}
       - {label: "Carly's take", name: "carlyTake", widget: "markdown", required: false}
       - {label: "Nico's take", name: "nicoTake", widget: "markdown", required: false}
+      - {label: "Gallery", name: "gallery", widget: "image", default: "/uploads/chocolate-dogecoin.jpg"
+  media_library:
+    config:
+      multiple: true}
     # PAGES
   - name: "page"
     label: "Page"
