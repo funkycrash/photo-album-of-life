@@ -82,3 +82,15 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+
+
+collections:
+  destination:
+    output: true
+collections_dir: _data/
+
+defaults:
+  - scope:
+      type: "destination"
+    values:
+      layout: destination
