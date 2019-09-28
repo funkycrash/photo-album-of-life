@@ -12,7 +12,7 @@ body {
   grid-template-rows: auto 1fr auto;
   grid-template-columns:
     [full-start] minmax(1rem, 1fr)
-    [main-start] minmax(0, 52rem) [main-end]
+    [main-start] minmax(0, 80rem) [main-end]
     minmax(1rem, 1fr) [full-end];
 }
 
@@ -117,7 +117,6 @@ main {
 html[data-current="blog"] main > section {
   ul li {
     padding: 2rem 0;
-    border-bottom: 0.05em solid $hairline-color;
     p {
       padding-bottom: 0;
     }

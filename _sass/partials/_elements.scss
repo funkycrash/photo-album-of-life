@@ -1,0 +1,13 @@
+.destination--container {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    row-gap: 2rem;
+    align-items: start;
+    justify-content: space-between;
+    .destination--item {
+        background-size: cover;
+        background-position: 50%;
+        width        : 340px;
+        height: 340px;
+    }
+}
