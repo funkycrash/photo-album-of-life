@@ -9,7 +9,7 @@ collections:
     folder: '_destination' # The path to the folder where the documents are stored
     sort: 'dateFrom:asc' # Default is title:asc
     create: true # Allow users to create new documents in this collection
-    slug: '{{year}}-{{month}}-{{slug}}'
+    slug: '{{year}}-{{dateFrom}}-{{slug}}'
     fields: # The fields each document in this collection have
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'destination' }
       - { label: 'Title', name: 'title', widget: 'string', tagname: 'h1' }
@@ -28,4 +28,3 @@ collections:
       - { label: 'Gallery', name: 'gallery6', widget: 'image', required: false }
       - { label: 'Gallery', name: 'gallery7', widget: 'image', required: false }
       - { label: 'Gallery', name: 'gallery8', widget: 'image', required: false }
-      - { label: 'Gallery', name: 'gallery9', widget: 'image', required: false }

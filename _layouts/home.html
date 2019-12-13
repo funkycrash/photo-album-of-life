@@ -1,10 +1,10 @@
 ---
 layout: default
 ---
-  <ul class="destination--container">
+  <ul class="image--container">
     {% for destination in site.destination %}
       <a href="{{ destination.url }}">
-      <li class="destination--item" style="background-image:url({{destination.featuredImage}})">
+      <li class="image--item" style="background-image:url({{destination.featuredImage}})">
         {{ destination.title }}
       </li>
     </a>
