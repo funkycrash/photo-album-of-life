@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: funkycrash/photo-album-of-life
   branch: master
 media_folder: assets/img/uploads
 publish_mode: editorial_workflow
