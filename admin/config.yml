@@ -7,7 +7,7 @@ collections:
   - name: 'destination' # Used in routes, ie.: /admin/collections/:slug/edit
     label: 'Destination' # Used in the UI, ie.: "New Post"
     folder: '_destination' # The path to the folder where the documents are stored
-    sort: 'dateFrom:desc' # Default is title:asc
+    sort: 'dateFrom:asc' # Default is title:asc
     create: true # Allow users to create new documents in this collection
     slug: '{{year}}-{{month}}-{{slug}}'
     fields: # The fields each document in this collection have
@@ -18,7 +18,7 @@ collections:
       - { label: 'Featured Image', name: 'featuredImage', widget: 'image', default: '/assets/img/uploads/morocco.jpg' }
       - { label: 'Intro Paragraph', name: 'intro_paragraph', widget: 'markdown', required: false }
       - { label: 'Places', name: 'places', widget: 'map', required: false }
-      - { label: 'Our take', name: 'carlyTake', widget: 'markdown', required: false }
+      - { label: 'Our take', name: 'ourTake', widget: 'markdown', required: false }
       - {
           label: 'Gallery',
           name: 'gallery',
