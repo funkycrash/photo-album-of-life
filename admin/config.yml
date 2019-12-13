@@ -19,11 +19,13 @@ collections:
       - { label: 'Intro Paragraph', name: 'intro_paragraph', widget: 'markdown', required: false }
       - { label: 'Places', name: 'places', widget: 'map', required: false }
       - { label: 'Our take', name: 'ourTake', widget: 'markdown', required: false }
-      - {
-          label: 'Gallery',
-          name: 'gallery',
-          widget: 'image',
-          allow_multiple: true,
-          default: '/uploads/chocolate-dogecoin.jpg',
-          media_library: { config: { multiple: true } },
-        }
+      - { label: 'Gallery', name: 'gallery0', widget: 'image', required: false }
+      - { label: 'Gallery', name: 'gallery1', widget: 'image', required: false }
+      - { label: 'Gallery', name: 'gallery2', widget: 'image', required: false }
+      - { label: 'Gallery', name: 'gallery3', widget: 'image', required: false }
+      - { label: 'Gallery', name: 'gallery4', widget: 'image', required: false }
+      - { label: 'Gallery', name: 'gallery5', widget: 'image', required: false }
+      - { label: 'Gallery', name: 'gallery6', widget: 'image', required: false }
+      - { label: 'Gallery', name: 'gallery7', widget: 'image', required: false }
+      - { label: 'Gallery', name: 'gallery8', widget: 'image', required: false }
+      - { label: 'Gallery', name: 'gallery9', widget: 'image', required: false }
