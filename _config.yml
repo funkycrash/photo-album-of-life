@@ -16,10 +16,9 @@
 title: Travel Journal
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml.
-baseurl: "" # the subpath of your site if applicable, e.g. /blog
-url: "https://jekyll-netlify-boilerplate.netlify.com" # the base hostname & protocol for your site, e.g. https://example.com
+  Write an awesome description for your new site here. You can edit this line in _config.yml.
+baseurl: '' # the subpath of your site if applicable, e.g. /blog
+url: 'https://jekyll-netlify-boilerplate.netlify.com' # the base hostname & protocol for your site, e.g. https://example.com
 
 # Permalink format (/blog/ is ignored for pages)
 permalink: /blog/:title
@@ -45,13 +44,12 @@ compress_html:
 
 # set some common post defaults
 defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-      type: "posts" # previously `post` in Jekyll 2.2.
+  - scope:
+      path: '' # an empty string here means all files in the project
+      type: 'posts' # previously `post` in Jekyll 2.2.
     values:
-      layout: "post" # set the correct default template for a post
-      section: "post" # set the root section name
+      layout: 'post' # set the correct default template for a post
+      section: 'post' # set the root section name
 
 # Build settings
 markdown: kramdown
@@ -82,15 +80,3 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-
-
-collections:
-  destination:
-    output: true
-collections_dir: _data/
-
-defaults:
-  - scope:
-      type: "destination"
-    values:
-      layout: destination
