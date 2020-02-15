@@ -3,7 +3,7 @@ layout: default
 ---
 <ul class="image--container main">
 
-    {% assign sorted = (site.destination | sort: 'dateFrom') | reverse %}
+    {% assign sorted = site.destination | sort: 'dateFrom' | reverse %}
     {% for destination in sorted %}
         <a href="{{ destination.url }}">
             <li class="image--item" style="background-image:url({{destination.featuredImage}})">
@@ -18,4 +18,4 @@ layout: default
 
 {% include page-intro.html %}
 
-{{ content }}
+{{ content }} 
