@@ -1,21 +1,19 @@
 ---
 layout: default
 ---
-  <ul class="image--container">
+<ul class="image--container main">
     {% for destination in site.destination %}
-      <a href="{{ destination.url }}">
-      <li class="image--item" style="background-image:url({{destination.featuredImage}})">
-        {{ destination.title }}
-      </li>
-    </a>
+        <a href="{{ destination.url }}">
+            <li class="image--item" style="background-image:url({{destination.featuredImage}})">
+                {{ destination.title }}
+            </li>
+        </a>
     {% endfor %}
-  </ul>
+</ul>
 
 
-  <h2>{{ page.title }}</h2>
+<h2>{{ page.title }}</h2>
 
-  {% include page-intro.html %}
+{% include page-intro.html %}
 
-  {{ content }}
-
-
+{{ content }}
