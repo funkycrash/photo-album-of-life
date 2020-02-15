@@ -11,6 +11,7 @@ intro_paragraph: >-
   offering a completely different feel to the other spaces within the school.
   The goal was enhancing the integrated learning approach at the core of STS
   programming.
+places: '{"type":"Point","coordinates":[-15.95644,23.6120479]}'
 ourTake: lorem ipsum
 photoFolderName: 2019.morocco
 ---
