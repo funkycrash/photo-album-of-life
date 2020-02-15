@@ -16,6 +16,8 @@ layout: default
 
 {% include page-intro.html %}
 
+{% include destination-map.html %}
+
 {{ page.ourTake }}
 
 {% include image-gallery.html %}
@@ -38,3 +40,20 @@ layout: default
         {% endif %}
     </ul>
 </nav>
+
+{{ page.places | url_decode | inspect }}
+
+<script type="text/javascript">
+    var gps = {{ page.places }};
+    var map = L.map("map").setView([
+        gps.coordinates[1], gps.coordinates[0]
+    ], 4);
+
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {attribution: "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors"}).addTo(map);
+    L
+        .marker([
+            gps.coordinates[1], gps.coordinates[0]
+        ])
+        .addTo(map)
+        .openPopup();
+</script>
