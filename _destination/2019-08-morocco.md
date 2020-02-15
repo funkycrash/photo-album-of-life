@@ -14,5 +14,6 @@ intro_paragraph: >-
 places: '{"type":"Point","coordinates":[-15.95644,23.6120479]}'
 ourTake: lorem ipsum
 photoFolderName: 2019.morocco
+photoSetSize: 35
 ---
 
