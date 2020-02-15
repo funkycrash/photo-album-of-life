@@ -1,5 +1,11 @@
 {
   "devDependencies": {
     "prettier": "^1.18.2"
+  },
+  "dependencies": {
+    "concurrent-transform": "^1.0.0",
+    "gulp": "^4.0.2",
+    "gulp-changed": "^4.0.2",
+    "gulp-image-resize": "^0.13.1"
   }
 }
