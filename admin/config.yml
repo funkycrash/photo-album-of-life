@@ -20,3 +20,4 @@ collections:
       - { label: 'Places', name: 'places', widget: 'map', required: false }
       - { label: 'Our take', name: 'ourTake', widget: 'markdown', required: false }
       - { label: 'Photo Folder Name', name: 'photoFolderName', widget: 'string' }
+      - { label: 'Photo Set Size', name: 'photoSetSize', widget: 'number' }

@@ -3,6 +3,6 @@
 {% assign num = page.photos.size %}
 <ul class="image--container">
     {% for i in (1..num) %}
-        <li class="image--item" style="background-image:url({{ site.baseurl }}/photos-resized/{{ page.photos.set }}/{{ page.photos.set }}-{{ i }}.jpg)"></li>
+        <li class="image--item" style="background-image:url({{ site.baseurl }}/photos-resized/{{ page.photoFolderName }}/{{ page.photoFolderName }}-{{ i }}.jpg)"></li>
     {% endfor %}
 </ul>
